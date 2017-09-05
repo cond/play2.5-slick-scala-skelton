@@ -1,14 +1,21 @@
-Play Frameworkのチュートリアル
-==============================
+Play Framework 2.5 project skelton in Scala with Slick
+======================================================
 
-Play2.6でToDoリストを作成するチュートリアル。
-他のチュートリアルとは違い、現在バージョンを使っている。
+This is a skelton project for Play Framework 2.5 in Scala with Slick.
 
-* [Play Frameworkハンズオン環境構築 - Qiita](http://qiita.com/yuichi0301/items/4785e3fe490736d4ee50)
-* [Play Frameworkハンズオン - Qiita](http://qiita.com/yuichi0301/items/ead86d0251b954f07935)
+Library versions are as follows:
 
-まず、`sbt new`コマンドで最新(Play 2.6)のスタートアッププロジェクトをコピーした。
+play-slick 2.0.0
+slick 3.1
+Scala 2.11.11
+Play 2.5.16
+
+## How to run
+
+Invoke Play Framework web server with `sbt` command.
 
 ```
-$ sbt new playframework/play-scala-seed.g8
+$ sbt run
 ```
+
+Access `http://localhost:9000/` with your browser and you'll see the following screen image.

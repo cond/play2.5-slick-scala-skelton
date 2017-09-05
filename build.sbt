@@ -5,13 +5,12 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.12.2"
+scalaVersion := "2.11.11"
 
-libraryDependencies += guice
+libraryDependencies += ws
+libraryDependencies += filters
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.0" % Test
 
-// Adds additional packages into Twirl
-//TwirlKeys.templateImports += "com.example.controllers._"
-
-// Adds additional packages into conf/routes
-// play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
+libraryDependencies += "com.typesafe.play" %% "play-slick" % "2.0.0"
+libraryDependencies += "com.typesafe.play" %% "play-slick-evolutions" % "2.0.0"
+libraryDependencies += "com.h2database" % "h2" % "1.3.176"

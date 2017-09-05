@@ -1,0 +1,32 @@
+@(items: Seq[User])
+
+<html>
+  <head>
+    <title>User list</title>
+  </head>
+  <body>
+    <h1>User list</h1>
+    <section>
+      <table>
+	<thead>
+	  <tr>
+	    <th>No.</th>
+	    <th>名前</th>
+	    <th>Email</th>
+	    <th>会社</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  @items.map { todo =>
+	  <tr>
+	    <td>@todo.id</td>
+	    <td>@todo.name</td>
+	    <td>@todo.email</td>
+	    <td>@todo.company</td>
+	  </tr>
+	  }
+	</tbody>
+      </table>
+    </section>
+  </body>
+</html>
