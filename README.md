@@ -19,3 +19,5 @@ $ sbt run
 ```
 
 Access `http://localhost:9000/` with your browser and you'll see the following screen image.
+
+<img src="https://github.com/cond/play2.5-slick-scala-skelton/blob/media/media/screen.png" width=300>
