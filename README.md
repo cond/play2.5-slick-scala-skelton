@@ -5,10 +5,10 @@ This is a skelton project for Play Framework 2.5 in Scala with Slick.
 
 Library versions are as follows:
 
-play-slick 2.0.0
-slick 3.1
-Scala 2.11.11
-Play 2.5.16
+* play-slick 2.0.0
+* slick 3.1
+* Scala 2.11.11
+* Play 2.5.16
 
 ## How to run
 
